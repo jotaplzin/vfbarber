@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFBarber</title>
+    <link rel="stylesheet" href="Barber.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+    <h1>VFBarber</h1>
+    <h2>Corte, barba e estilo no ponto certo</h2>
+
+    <button class="botao" >Agendar Horário</button>
+
+    </header>
+
+        <section>
+        <h3>Nossos Serviços</h3>
+            <ul>
+                <li>Corte de Cabelo - R$ 30,00</li>
+                <li>Navalhado - R$ 35,00</li>
+                <li>Corte + Barba - R$ 55,00</li>
+                <li>Barba - R$ 25,00</li>
+                <li>Sobrancelha - R$ 5,00</li>
+            </ul>
+        </section>
+
+        <footer>
+            <h3>Por que nos escolher?</h3>
+            <ul>
+                <li>Abiente climatizado</li>
+                <li>Profissionais especializados</li>
+                <li>atendimento com hora Marcada</li>
+                <li>produtos de otima qualidade</li>
+                <li>som Abiente</li>
+            </ul>
+            
+
+        </footer>
+
+        <div >
+           <button class="botao">Agendar Horário</button>
+        </div>
+
+        <div class="modal " id="modal" > 
+
+            <div class="caixa">
+                <button class="fechar" >x</button>
+
+                    <div class="agendamento">
+
+                        <label>Nome</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome aqui ">
+                        
+                        <label>Data</label>
+                        <input type="date" id="data">
+                        
+                        <label>Horário</label>
+                        <select class="horarios" id="horario">
+                            <option>09:00</option>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>12:00</option>
+                            <option>13:00</option>
+                            <option>14:00</option>
+                            <option>15:00</option>
+                            <option>16:00</option>
+                            <option>17:00</option>
+                        </select>
+                        
+                        <label>Serviço</label>
+                        <select class="servicos" id ="servico">
+                            <option>Corte de Cabelo</option>
+                            <option>Navalhado</option>
+                            <option>Corte + Barba</option>
+                            <option>Barba</option>
+                            <option>Sobrancelha</option>
+                        </select>
+
+                        <label>Contato</label>
+                        <input type="tel" id="contato" placeholder="adicione seu contato aqui ">
+                        
+                        <button class="enviar" >Confirmar Agendamento</button>
+                    </div>
+
+              
+            
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+
+        
+
+       
+
+    </section>
+<script src="agendamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+body {
+    font-family: 'inter', sans-serif;
+    background-color: #0f0f0f;
+    padding: 40px 0;
+    color: #f2f2f2;
+}header {
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    color: #c9a24d;
+}
+
+button {
+        
+    display: inline-block;
+    width:  fit-content;
+    font-weight: 600;
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 14px 36px;
+
+    text-decoration: none;
+    color:#0f0f0f;
+    background: linear-gradient(135deg, #c9a24d,#a8832b);
+
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+
+}button:hover {
+    box-shadow: 0 10px 25px rgba(201, 162, 77, 0.4);
+    transition: 0.2s ease;
+    transform: translatey(-2px);
+}
+
+section {
+    width: 60%;
+    margin: 40px auto;
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    background-color: #1a1a1a;
+    max-width: 520px;
+
+
+}section:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    transform: translatey(-5px);}
+
+section h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+section ul {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+
+section li::before{
+    list-style: none;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+    content: "✂️";
+}
+
+footer li {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+footer h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+footer {
+    width: 60%;
+    margin: 40px auto;
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    background-color: #1a1a1a;
+    max-width: 520px;
+    
+}footer:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    transform: translatey(-5px);
+}
+
+footer ul {
+
+    padding: 0%;
+    margin: 0%;
+
+}
+
+div {
+    text-align: center;
+    margin-top: 10px ;
+
+    
+}div button {
+    
+    display: inline-block;
+    width:  fit-content;
+    font-weight: 600;
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 14px 36px;
+
+    text-decoration: none;
+    color:#0f0f0f;
+    background: linear-gradient(135deg, #c9a24d,#a8832b);
+
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+
+}
+
+div button:hover {
+    box-shadow: 0 10px 25px rgba(201, 162, 77, 0.4);
+    transition: 0.2s ease;
+    transform: translatey(-2px);
+}
+
+div.modal{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.06);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+    
+
+}
+
+div.modal.aberto {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+    pointer-events: auto;
+
+    
+
+    background: rgba(0, 0, 0, 0.06);
+
+
+   
+}div.caixa{
+    background-color:   #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+
+    text-align: left;
+
+    max-width: 400px;
+    width: 90%;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    position: relative;
+    
+    transform: scale(0.9) translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+
+
+
+
+}div.modal.aberto .caixa{
+    
+    transform: scale(1) translateY(0);
+    opacity: 1; 
+
+}div.caixa input,div.caixa select{
+    width: 100%;
+    padding: 12px;
+
+    border-radius: 6px;
+    border: 1px solid #333;
+
+    background-color: #111;
+    color: #fff;
+
+    box-sizing: border-box;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 13px;
+
+
+
+}.fechar{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    
+    color : #fff;
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+    
+    padding: 0%;
+
+    transition: color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+
+   
+}.fechar:hover{
+    color:#c9a24d;
+    box-shadow: 0 5px 15px rgba(201, 162, 77, 0.4);
+    transform: scale(1.1);
+}input:focus, select:focus{
+    border-color: #c9a24d;
+    box-shadow: 0 0 8px rgba(201, 162, 77, 0.6);
+    outline: none;
+}
+
+
+
